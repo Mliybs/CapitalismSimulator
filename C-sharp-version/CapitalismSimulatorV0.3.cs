@@ -4,14 +4,13 @@ using System.Collections.Generic;
 
 public class backup
 {
-    public List<int> list = new List<int>(){1,2};
-    public int A = 1;
+    public List<int> list = new List<int>();
+    public List<int> listing = new List<int>();
 }
 class main
 {
     public static void Main(string[] args)
     {
         backup back = new backup();
-        Console.WriteLine(back.A);
     }
 }
