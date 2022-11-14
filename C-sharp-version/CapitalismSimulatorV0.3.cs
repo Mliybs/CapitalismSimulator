@@ -1,11 +1,21 @@
+//资本主义模拟器
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
 
-public class backup
+class backup
 {
-    public List<int> list = new List<int>();
-    public List<int> listing = new List<int>();
+    public bool pause = false;
+    public int round = 0;
+    public int temp = 0;
+    public int number = 0;
+    public int item = 0;
+    public int G = 1000;
+    public int Pm = 0;
+    public int A = 0;
+    public int[] list;
+    public string[] listing;
 }
 class main
 {
