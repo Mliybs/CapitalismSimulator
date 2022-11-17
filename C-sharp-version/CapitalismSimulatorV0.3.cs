@@ -11,7 +11,7 @@ class backup //主要参数类
 
     public int round = 0;
 
-    public int temp = 0;
+    public string temp = "";
 
     public int number = 0;
 
@@ -33,7 +33,7 @@ class backup //主要参数类
 
         foreach(T element in UsingList)
         {
-            ListAll = ListAll + element + " ";
+            ListAll = ListAll + $"{element} ";
         }
 
         return ListAll;
@@ -57,7 +57,7 @@ class main //程序主进程
 
         while(backup.pause == false)
         {
-            backup.temp = 0;
+            backup.temp = "";
 
             backup.number = 0;
 
@@ -111,9 +111,16 @@ class main //程序主进程
 
             Console.WriteLine($"\n\n————————————————————————————资本主义模拟器回合分界线——第{backup.round}回合————————————————————————————");
 
-            Console.WriteLine($"\n\n货币：{backup.G}￥，生产资料：{backup.Pm}￥，劳动力：{backup.A}￥\n{T1.intro}\n{T2.intro}\n\n目前在生产的商品有：", backup.ListPrintAll<string>(backup.listing));
+            Console.WriteLine($"\n\n货币：{backup.G}￥，生产资料：{backup.Pm}￥，劳动力：{backup.A}￥\n{T1.intro}\n{T2.intro}\n\n目前在生产的商品有："+ backup.ListPrintAll<string>(backup.listing));
+
+            Console.Write("\n\n跳过本回合输入0，购买生产资料输入1，购买劳动力输入2，进行生产活动输入3，售卖商品输入4，输入其它值结束游戏（不保存）：");
+
+            backup.temp = Console.ReadLine();
+
+            backup.number = Math.Abs(Convert.ToInt32(backup.temp));
 
             backup.pause = true;
+            
         }
     }
 }
