@@ -119,6 +119,37 @@ class main //程序主进程
 
             backup.number = Math.Abs(Convert.ToInt32(backup.temp));
 
+            backup.temp = 0;
+
+            switch(backup.number)
+            {
+                case 0:
+
+                    Console.WriteLine("\n\n本回合跳过！");
+
+                    break;
+
+                case 1:
+
+                    Console.Write($"\n\n你要购买多少￥的生产资料呢？最多可购买{backup.G}￥");
+
+                    backup.temp = Console.ReadLine();
+
+                    backup.number = Math.Abs(Convert.ToInt32(backup.temp));
+
+                    if(backup.number <= backup.G)
+                    {
+                        backup.G -= backup.number;
+
+                        backup.Pm += backup.number;
+                    }
+                    
+                    else
+                    {
+                        Console.WriteLine("\n\n你所持有的￥不够！");
+                    }
+            }
+
             backup.pause = true;
             
         }
