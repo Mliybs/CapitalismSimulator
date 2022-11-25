@@ -43,9 +43,35 @@ class main //程序主进程
 {
     public static void Main(string[] args)
     {
-        T1 T1;
+        TYPE T1;
 
-        T2 T2;
+        TYPE T2;
+
+        T1.code = 1;
+
+        T1.name = "木板";
+
+        T1.Pm = 16;
+
+        T1.A = 4;
+
+        T1.m = 4;
+
+        T1.W = 24;
+
+        T2.code = 2;
+
+        T2.name = "螺丝";
+
+        T2.Pm = 2;
+
+        T2.A = 2;
+
+        T2.m = 2;
+
+        T2.W = 6;
+
+        //商品基本数值
 
         T1.number = 0;
 
@@ -155,6 +181,24 @@ class main //程序主进程
         }
     }
 }
+struct TYPE //商品相关数值结构
+{
+    public int code;
+
+    public string name;
+
+    public int number;
+
+    public int Pm;
+
+    public int A;
+
+    public int m;
+
+    public int W;
+
+    public string intro;
+}
 struct T1 //木板相关数值结构
 {
     public const int code = 1;
@@ -170,24 +214,6 @@ struct T1 //木板相关数值结构
     public const int m = 4;
 
     public const int W = 24;
-
-    public string intro;
-}
-struct T2 //螺丝相关数值结构
-{
-    public const int code = 2;
-
-    public const string name = "螺丝";
-
-    public int number;
-
-    public const int Pm = 2;
-
-    public const int A = 2;
-
-    public const int m = 2;
-
-    public const int W = 6;
 
     public string intro;
 }
