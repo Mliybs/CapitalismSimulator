@@ -199,21 +199,3 @@ struct TYPE //商品相关数值结构
 
     public string intro;
 }
-struct T1 //木板相关数值结构
-{
-    public const int code = 1;
-
-    public const string name = "木板";
-
-    public int number;
-
-    public const int Pm = 16;
-
-    public const int A = 4;
-
-    public const int m = 4;
-
-    public const int W = 24;
-
-    public string intro;
-}
