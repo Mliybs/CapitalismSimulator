@@ -174,6 +174,56 @@ class main //程序主进程
                     {
                         Console.WriteLine("\n\n你所持有的￥不够！");
                     }
+
+                    break;
+
+                case 2:
+
+                    Console.Write($"\n\n你要购买多少￥的劳动力呢？最多可购买{backup.G}￥");
+
+                    backup.temp = Console.ReadLine();
+
+                    backup.number = Math.Abs(Convert.ToInt32(backup.temp));
+
+                    if(backup.number <= backup.G)
+                    {
+                        backup.G -= backup.number;
+
+                        backup.A += backup.number;
+                    }
+
+                    else
+                    {
+                        Console.WriteLine("\n\n你所持有的￥不够！");
+                    }
+
+                    break;
+
+                case 3:
+
+                    Console.Write($"\n\n你要生产哪种商品呢？\n{T1.intro}，最多可生产{Math.Min(backup.Pm/T1.Pm,backup.A/T1.A)}个\n{T2.intro}，最多可生产{Math.Min(backup.Pm/T2.Pm,backup.A/T2.A)}个：");
+
+                    backup.temp = Console.ReadLine();
+
+                    backup.item = Math.Abs(Convert.ToInt32(backup.temp));
+
+                    backup.list.Add(new List<int>(backup.item));
+
+                    if(backup.item != T1.code && backup.item != T2.code)
+                    {
+                        Console.WriteLine("\n\n没有输入有效值！本回合结束！");
+                    }
+
+                    else
+                    {
+                        backup.temp = "";
+
+                        Console.Write("\n\n你要生产几个呢？");
+
+                        backup.temp = Console.ReadLine();
+                        
+                        backup.number = Math.Abs(Convert.ToInt32(backup.temp));
+                    }
             }
 
             backup.pause = true;
