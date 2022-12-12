@@ -27,7 +27,7 @@ class backup //主要参数类
 
     public List<string> listing = new List<string>();
 
-    public string ListPrintAll<T>(List<T> UsingList)
+    public string ListPrintAll<T>(List<T> UsingList) //打印列表中所有元素的函数
     {
         string ListAll = "";
 
@@ -95,17 +95,17 @@ class main //程序主进程
 
             if(backup.list.Count != 0)
             {
-                if((backup.list[0])[1] > 0)
+                if((backup.list[0])[(backup.list[0]).Count - 1] > 0)
                 {
-                    (backup.list[0])[1] -= 1;
+                    (backup.list[0])[(backup.list[0]).Count - 1] -= 1;
 
-                    switch((backup.list[0])[0])
+                    switch((backup.list[0])[(backup.list[0]).Count - 1])
                     {
                         case 1:
 
                             T1.number += 1;
 
-                            backup.listing[0] = $"{(backup.list[0])[1]}个木板";
+                            backup.listing[0] = $"{(backup.list[0])[(backup.list[0]).Count - 1]}个木板";
 
                             break;
 
@@ -113,13 +113,13 @@ class main //程序主进程
                             
                             T2.number += 1;
 
-                            backup.listing[0] = $"{(backup.list[0])[1]}个螺丝";
+                            backup.listing[0] = $"{(backup.list[0])[(backup.list[0]).Count - 1]}个螺丝";
 
                             break;
                     }
                 }
 
-                if((backup.list[0])[1] == 0)
+                if((backup.list[0])[(backup.list[0]).Count - 1] == 0)
                 {
                     backup.list.RemoveAt(0);
 
@@ -223,6 +223,35 @@ class main //程序主进程
                         backup.temp = Console.ReadLine();
                         
                         backup.number = Math.Abs(Convert.ToInt32(backup.temp));
+
+                        if(backup.item == T1.code && backup.number * T1.Pm <= backup.Pm && backup.number * T1.A <= backup.A)
+                        {
+                            (backup.list[backup.list.Count - 1]).Add(backup.number);
+
+                            backup.listing.Add($"{(backup.list[backup.list.Count - 1])[(backup.list[0]).Count - 1]}个木板");
+
+                            backup.Pm -= backup.number * T1.Pm;
+
+                            backup.A -= backup.number * T1.A;
+                        }
+
+                        else if(backup.item == T2.code && backup.number * T2.Pm <= backup.Pm && backup.number * T2.A <= backup.A)
+                        {
+                            (backup.list[backup.list.Count - 1]).Add(backup.number);
+
+                            backup.listing.Add($"{(backup.list[backup.list.Count - 1])[(backup.list[0]).Count - 1]}个螺丝");
+
+                            backup.Pm -= backup.number * T2.Pm;
+
+                            backup.A -= backup.number * T2.A;
+                        }
+
+                        else
+                        {
+                            Console.WriteLine("\n\n你所持有的生产资本不够！");
+                        }
+
+                    break;
                     }
             }
 
