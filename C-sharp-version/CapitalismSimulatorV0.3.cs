@@ -145,7 +145,7 @@ class main //程序主进程
 
             backup.number = Math.Abs(Convert.ToInt32(backup.temp));
 
-            backup.temp = 0;
+            backup.temp = "";
 
             switch(backup.number)
             {
