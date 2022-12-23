@@ -250,9 +250,9 @@ class main //程序主进程
                         {
                             Console.WriteLine("\n\n你所持有的生产资本不够！");
                         }
+                    }
 
                     break;
-                    }
             }
 
             backup.pause = true;
