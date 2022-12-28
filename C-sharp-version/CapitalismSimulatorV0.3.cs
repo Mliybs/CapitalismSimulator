@@ -252,10 +252,56 @@ class main //程序主进程
                     }
 
                     break;
-            }
 
-            backup.pause = true;
-            
+                case 4:
+
+                    Console.Write($"\n\n你要售卖哪种商品呢？\n{T1.intro}\n{T2.intro}：");
+
+                    backup.temp = Console.ReadLine();
+
+                    backup.item = Math.Abs(Convert.ToInt32(backup.temp));
+
+                    if(backup.item != T1.code && backup.item != T2.code)
+                    {
+                        Console.WriteLine("\n\n没有输入有效值！本回合结束！");
+                    }
+
+                    else
+                    {
+                        backup.temp = "";
+
+                        Console.Write("\n\n你要售卖几个呢？");
+
+                        backup.temp = Console.ReadLine();
+
+                        backup.number = Math.Abs(Convert.ToInt32(backup.temp));
+
+                        if(backup.item == T1.code && backup.number <= T1.number)
+                        {
+                            backup.G += backup.number * T1.W;
+
+                            T1.number = T1.number - backup.number;
+                        }
+
+                        else if(backup.item == T2.code && backup.number <= T2.number)
+                        {
+                            backup.G += backup.number * T2.W;
+
+                            T2.number = T2.number - backup.number;
+                        }
+
+                        else
+                        {
+                            Console.WriteLine("\n\n你所持有的商品不够！");
+                        }
+                    }
+
+                    break;
+
+                default:
+
+                    backup.pause = true;
+            }
         }
     }
 }
