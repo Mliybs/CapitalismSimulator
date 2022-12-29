@@ -301,6 +301,8 @@ class main //程序主进程
                 default:
 
                     backup.pause = true;
+
+                    break;
             }
         }
     }
