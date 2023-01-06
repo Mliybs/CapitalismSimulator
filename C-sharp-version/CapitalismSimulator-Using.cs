@@ -10,4 +10,16 @@ namespace CapiSimu
     {
         
     }
+
+    class Wares
+    {
+        public Ware plank;
+
+        public Ware screw;
+    }
+
+    struct Ware
+    {
+        public int W;
+    }
 }
