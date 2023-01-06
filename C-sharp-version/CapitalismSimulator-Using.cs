@@ -4,7 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace CapiSimu
+namespace CapiSimuUsing
 {
     class CapitalismSimulator
     {
@@ -13,6 +13,16 @@ namespace CapiSimu
 
     class Wares
     {
+        public Wares()
+        {
+            plank.W = 20;
+
+            plank.W = "木板";
+
+            screw.W = 4;
+
+            screw.name = "螺丝";
+        }
         public Ware plank;
 
         public Ware screw;
@@ -21,5 +31,7 @@ namespace CapiSimu
     struct Ware
     {
         public int W;
+
+        public string name;
     }
 }
