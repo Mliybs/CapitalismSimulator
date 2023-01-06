@@ -17,7 +17,7 @@ namespace CapiSimuUsing
         {
             plank.W = 20;
 
-            plank.W = "木板";
+            plank.name = "木板";
 
             screw.W = 4;
 
@@ -26,6 +26,16 @@ namespace CapiSimuUsing
         public Ware plank;
 
         public Ware screw;
+    }
+
+    class Worker
+    {
+        public Worker(string name)
+        {
+            WorkerName = name;
+        }
+
+        public string WorkerName;
     }
 
     struct Ware
