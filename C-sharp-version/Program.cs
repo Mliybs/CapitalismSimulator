@@ -11,9 +11,7 @@ namespace CapitalismSimulator
     {
         static void Main(string[] args)
         {
-            Worker jack = new Worker("Jack");
-
-            Console.WriteLine(jack.WorkerName);
+            Console.WriteLine("Hello World!");
         }
     }
 }

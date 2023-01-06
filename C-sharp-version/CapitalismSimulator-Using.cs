@@ -15,6 +15,8 @@ namespace CapiSimuUsing
     {
         public Wares()
         {
+            plank.code = 1;
+            
             plank.W = 20;
 
             plank.name = "木板";
@@ -28,18 +30,41 @@ namespace CapiSimuUsing
         public Ware screw;
     }
 
-    class Worker
+    class Robot : IWorker
+    {}
+
+    class Worker : IWorker
     {
         public Worker(string name)
         {
-            WorkerName = name;
+            workername = name;
         }
 
-        public string WorkerName;
+        public string WorkerName
+        {
+            get
+            {
+                return workername;
+            }
+        }
+
+        int workername;
+
+        public List<List<int>> workerdoing;
+
+        public void Work()
+        {}
+    }
+
+    interface IWorker
+    {
+        void Work();
     }
 
     struct Ware
     {
+        public int code;
+
         public int W;
 
         public string name;
