@@ -8,7 +8,7 @@ namespace CapiSimuUsing
 {
     class CapitalismSimulator
     {
-        
+        public int gelt;
     }
 
     class Wares
@@ -21,6 +21,8 @@ namespace CapiSimuUsing
 
             plank.name = "木板";
 
+            screw.code = 2;
+
             screw.W = 4;
 
             screw.name = "螺丝";
@@ -30,37 +32,6 @@ namespace CapiSimuUsing
         public Ware screw;
     }
 
-    class Robot : IWorker
-    {}
-
-    class Worker : IWorker
-    {
-        public Worker(string name)
-        {
-            workername = name;
-        }
-
-        public string WorkerName
-        {
-            get
-            {
-                return workername;
-            }
-        }
-
-        int workername;
-
-        public List<List<int>> workerdoing;
-
-        public void Work()
-        {}
-    }
-
-    interface IWorker
-    {
-        void Work();
-    }
-
     struct Ware
     {
         public int code;
@@ -68,5 +39,52 @@ namespace CapiSimuUsing
         public int W;
 
         public string name;
+    }
+
+    class Robot : IWorker
+    {
+        public void Work() {}
+
+        void IWorker.Die() {}
+    }
+
+    class Worker : IWorker
+    {
+        public Worker(string name)
+        {
+            workername = name;
+
+            Console.WriteLine($"已雇用{workername}！");
+        }
+
+        public string WorkerName{get{return workername;}}
+
+        string workername;
+
+        public List<List<int>> workerdoing;
+
+        public int hire;
+
+        public int fire;
+
+        public virtual void Work() {}
+
+        public void Die() {}
+    }
+
+    interface IWorker
+    {
+        void Work();
+
+        void Die();
+    }
+
+    class Jack : Worker
+    {
+        public Jack() : base("Jack") {}
+
+        public override void Work() {}
+
+        
     }
 }
