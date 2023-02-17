@@ -8,7 +8,11 @@ namespace CapiSimuUsing
 {
     class CapitalismSimulator
     {
-        public int gelt;
+        public static int gelt;
+
+        public static int Workers{get{return workers;}}
+
+        internal static int workers;
     }
 
     class Wares
@@ -54,12 +58,14 @@ namespace CapiSimuUsing
         {
             workername = name;
 
+            CapitalismSimulator.workers += 1;
+
             Console.WriteLine($"已雇用{workername}！");
         }
 
         public string WorkerName{get{return workername;}}
 
-        string workername;
+        protected string workername;
 
         public List<List<int>> workerdoing;
 
@@ -84,7 +90,5 @@ namespace CapiSimuUsing
         public Jack() : base("Jack") {}
 
         public override void Work() {}
-
-        
     }
 }
