@@ -2,7 +2,7 @@
 分别用C#和Python做的一个文字游戏
 *（指只有文字的游戏）*
 
-Python版用的是Python3 C#版采用了最新 *（目前）*的.NET 7 用了一些C#10.0的语法 所以如果要运行的话必须得有.NET 7的运行时环境
+Python版用的是Python3 C#版采用了最新_（目前）_的.NET 7 用了一些C#10.0的语法 所以如果要运行的话必须得有.NET 7的运行时环境
 
 *（这里不得不夸一下微软了 两百年了终于把.NET core和.NET Framework合并了 不过虽然.NET 5就合并了我不知道而已 我之前用的.NET 5 不过.NET 5目前不是支持版本所以还加了Mono辅助运行 最近才装上.NET 7 终于能把OmniSharp的UseModernNet打开了我泪目了）*
 

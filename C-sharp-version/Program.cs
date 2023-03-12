@@ -13,8 +13,6 @@ namespace CapitalismSimulatorProgram
         static void Main(string[] args)
         {
             CapitalismSimulator CapiSimu = new CapitalismSimulator();
-
-            
         }
     }
 }
