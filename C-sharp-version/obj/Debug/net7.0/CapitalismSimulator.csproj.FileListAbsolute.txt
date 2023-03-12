@@ -1,0 +1,15 @@
+/media/mliybs/儿童邪典/CapitalismSimulator/C-sharp-version/bin/Debug/net7.0/CapitalismSimulator
+/media/mliybs/儿童邪典/CapitalismSimulator/C-sharp-version/bin/Debug/net7.0/CapitalismSimulator.deps.json
+/media/mliybs/儿童邪典/CapitalismSimulator/C-sharp-version/bin/Debug/net7.0/CapitalismSimulator.runtimeconfig.json
+/media/mliybs/儿童邪典/CapitalismSimulator/C-sharp-version/bin/Debug/net7.0/CapitalismSimulator.dll
+/media/mliybs/儿童邪典/CapitalismSimulator/C-sharp-version/bin/Debug/net7.0/CapitalismSimulator.pdb
+/media/mliybs/儿童邪典/CapitalismSimulator/C-sharp-version/obj/Debug/net7.0/CapitalismSimulator.csproj.AssemblyReference.cache
+/media/mliybs/儿童邪典/CapitalismSimulator/C-sharp-version/obj/Debug/net7.0/CapitalismSimulator.GeneratedMSBuildEditorConfig.editorconfig
+/media/mliybs/儿童邪典/CapitalismSimulator/C-sharp-version/obj/Debug/net7.0/CapitalismSimulator.AssemblyInfoInputs.cache
+/media/mliybs/儿童邪典/CapitalismSimulator/C-sharp-version/obj/Debug/net7.0/CapitalismSimulator.AssemblyInfo.cs
+/media/mliybs/儿童邪典/CapitalismSimulator/C-sharp-version/obj/Debug/net7.0/CapitalismSimulator.csproj.CoreCompileInputs.cache
+/media/mliybs/儿童邪典/CapitalismSimulator/C-sharp-version/obj/Debug/net7.0/CapitalismSimulator.dll
+/media/mliybs/儿童邪典/CapitalismSimulator/C-sharp-version/obj/Debug/net7.0/refint/CapitalismSimulator.dll
+/media/mliybs/儿童邪典/CapitalismSimulator/C-sharp-version/obj/Debug/net7.0/CapitalismSimulator.pdb
+/media/mliybs/儿童邪典/CapitalismSimulator/C-sharp-version/obj/Debug/net7.0/CapitalismSimulator.genruntimeconfig.cache
+/media/mliybs/儿童邪典/CapitalismSimulator/C-sharp-version/obj/Debug/net7.0/ref/CapitalismSimulator.dll
