@@ -19,4 +19,4 @@ Python版用的是Python3 C#版采用了最新 *（目前）* 的.NET 7 用了�
 *（我运行.cs的方法是先用mcs编译成.exe然后再用mono执行最后直接rm了，要不是vscode插件整半天整不会我也不会用这弱智方法）（使用mono编译的.exe其实是用微软的中间语言写的，和Windows下能独立直接运行的.exe不一样，使用的时候必须得安装.net framework或者像我一样用mono运行）*
 
 # 引用源代码
-该仓库引用了[codeyu/nanoid-net](https:github.com/codeyu/nanoid-net)的源代码，此仓库遵循MIT协议
+此仓库引用了[codeyu/nanoid-net](https:github.com/codeyu/nanoid-net)的源代码，该仓库遵循MIT协议
