@@ -17,3 +17,6 @@ Python版用的是Python3 C#版采用了最新 *（目前）* 的.NET 7 用了�
 目前因为我的主力系统是Ubuntu（电脑太拉半年前改用Ubuntu的），所以基本上没有编译成.exe的需求，所以要玩的话就只能跟我一样用命令行进入运行环境或者用IDE内置环境再或者就是自己编译啦（
 
 *（我运行.cs的方法是先用mcs编译成.exe然后再用mono执行最后直接rm了，要不是vscode插件整半天整不会我也不会用这弱智方法）（使用mono编译的.exe其实是用微软的中间语言写的，和Windows下能独立直接运行的.exe不一样，使用的时候必须得安装.net framework或者像我一样用mono运行）*
+
+# 引用源代码
+该仓库引用了[codeyu/nanoid-net](https:github.com/codeyu/nanoid-net)的源代码，此仓库遵循MIT协议
