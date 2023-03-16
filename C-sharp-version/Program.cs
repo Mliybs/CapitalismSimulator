@@ -1,5 +1,4 @@
 ﻿//资本主义模拟器
-//待修改
 
 namespace CapitalismSimulatorProgram
 {
@@ -9,7 +8,7 @@ namespace CapitalismSimulatorProgram
         {
             CapitalismSimulator CapiSimu = new();
 
-            allwork.WorkListAdd(Nanoid_Net.Generate(), (new(Worker.Work)));
+            allwork.WorkListAdd(new(Worker.Work), 5, 1);
         }
     }
 }
