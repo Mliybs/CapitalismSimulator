@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Njhf6Z+cPXv+Bwz8WpiJhgyf9nes8TDZg1nygiPufF6H10SzDskyLI5jGETpk3QEmXAXJXFU07M0cMMoDA3dBQ==",
+  "dgSpecHash": "F801+jXIwQ2Dok5ffxFTM6TVYEn2gD4VAqrknD3+cyoj1wq2eXs7Dl7ZWl3H1ylpzIaHzz2MveYqc6gE70XLeg==",
   "success": true,
   "projectFilePath": "/media/mliybs/儿童邪典/CapitalismSimulator/C-sharp-version/CapitalismSimulator.csproj",
-  "expectedPackageFiles": [
-    "/home/mliybs/.nuget/packages/microsoft.netcore.app.ref/7.0.3/microsoft.netcore.app.ref.7.0.3.nupkg.sha512",
-    "/home/mliybs/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.3/microsoft.aspnetcore.app.ref.7.0.3.nupkg.sha512",
-    "/home/mliybs/.nuget/packages/microsoft.netcore.app.host.linux-x64/7.0.3/microsoft.netcore.app.host.linux-x64.7.0.3.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

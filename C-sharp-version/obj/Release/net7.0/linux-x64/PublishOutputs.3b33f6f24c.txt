@@ -1,0 +1,2 @@
+/media/mliybs/儿童邪典/CapitalismSimulator/C-sharp-version/bin/Release/net7.0/linux-x64/publish/CapitalismSimulator
+/media/mliybs/儿童邪典/CapitalismSimulator/C-sharp-version/bin/Release/net7.0/linux-x64/publish/CapitalismSimulator.pdb
